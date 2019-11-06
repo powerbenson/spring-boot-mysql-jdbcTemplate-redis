@@ -28,10 +28,10 @@ management:
 
 # DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
 spring.datasource:  &datasource
-  url: "jdbc:mysql://127.0.0.1:3306/rockdb"
+  url: "jdbc:oracle:thin:@127.0.0.1:1521:xe"
   username: test
   password: test
-  driver-class-name: com.mysql.cj.jdbc.Driver
+  driver-class-name: oracle.jdbc.driver.OracleDriver
   hikari.maximumPoolSize: 100
   hikari.connectionTimeout: 30000 # Default: 30000 (30 seconds)
   hikari.idleTimeout: 600000 # Default: 600000 (10 minutes)
