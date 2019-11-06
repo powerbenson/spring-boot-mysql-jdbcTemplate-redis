@@ -29,9 +29,7 @@ public class UserController {
 
     @RequestMapping(value = "/getUser/{userid}" , method = RequestMethod.GET, produces="application/json;charset=UTF-8")
     @ResponseBody
-    public ResponseEntity<Response> song(
-            HttpServletRequest req,
-            HttpServletResponse resp,
+    public ResponseEntity<Response> getUser(
             @RequestHeader(value = "token", required = false) String token,
             @NotBlank @PathVariable(value = "userid", required = false) String userid) {
         Response response;
