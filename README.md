@@ -1,1 +1,1 @@
-# spring-boot-mysql-jdbcTemplate-redis
+# spring-boot-oracle-jdbcTemplate-redis
