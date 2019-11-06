@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service("tokenService")
 public class TokenService {
 
-    private static final String TOKEN_PREFIX = "tokenTEST:";
+    private static final String TOKEN_PREFIX = "token:";
 
     @Autowired
     @Qualifier("redisService")
